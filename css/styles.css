@@ -65,7 +65,6 @@ p {
   margin-bottom: 2.75rem;
 }
 
-
 h1 {
   color: #333;
   font: 700 2.75rem/3.375rem 'Montserrat', sans-serif;
@@ -254,7 +253,7 @@ Team Style
 */
 
 .team {
-  padding-top: 140px;  
+  padding-top: 140px;
 }
 
 .team-member {
@@ -1133,7 +1132,6 @@ input[type='checkbox'] {
   height: auto;
 }
 
-
 .expand-btn {
   position: relative;
   margin-top: 5px;
@@ -1162,7 +1160,6 @@ input[type='checkbox'] {
   padding-bottom: 2.75rem;
   background-color: #fbf9f5;
 }
-
 
 .basic-2 .li-space-lg li {
   margin-bottom: 1.375rem;
@@ -1465,7 +1462,7 @@ input[type='checkbox'] {
   color: #ffbd50;
 }
 
-.see-more {  
+.see-more {
   font-size: 1rem;
   line-height: 1rem;
   color: black;
@@ -1650,7 +1647,7 @@ input[type='checkbox'] {
 }
 
 .form-2 h3 {
-   text-align: center;
+  text-align: center;
 }
 
 .form-2 form {
@@ -1985,7 +1982,7 @@ a:hover.back-to-top {
   .basic-2 h2 {
     width: 41rem;
     margin-right: auto;
-    margin-left: auto;    
+    margin-left: auto;
     text-align: center;
   }
 
@@ -2300,10 +2297,6 @@ a:hover.back-to-top {
     margin-right: 3.5rem;
   }
 
-  .form-1 form {
-    margin-left: 1.5rem;
-  }
-
   .basic-1 .text-container {
     margin-top: 3.125rem;
     margin-left: 3.5rem;
@@ -2437,195 +2430,232 @@ a:hover.back-to-top {
 }
 
 .disciplinas {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .disciplina-item {
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .disciplina-item summary {
-    padding: 1rem;
-    background-color: #f8f9fa;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    transition: background-color 0.3s;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color 0.3s;
 }
 
 .disciplina-item summary:hover {
-    background-color: #e9ecef;
+  background-color: #e9ecef;
 }
 
 .disciplina-item summary i {
-    font-size: 1.5rem;
-    color: #0d6efd;
-    width: 30px;
-    text-align: center;
+  font-size: 1.5rem;
+  color: #ffbd50;
+  width: 30px;
+  text-align: center;
 }
 
 .disciplina-item[open] summary {
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .disciplina-conteudo {
-    padding: 1rem;
-    background-color: white;
+  padding: 1rem;
+  background-color: white;
 }
 
 .disciplina-conteudo ul {
-    margin: 0;
-    padding-left: 2rem;
+  margin: 0;
+  padding-left: 2rem;
 }
 
 .disciplina-conteudo p {
-    margin: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 /* Remove o marcador padrão do details */
 .disciplina-item summary::-webkit-details-marker {
-    display: none;
+  display: none;
 }
 
 /* Adiciona uma seta personalizada */
 .disciplina-item summary::after {
-    content: '\25BC';
-    margin-left: auto;
-    transition: transform 0.3s;
+  content: '\25BC';
+  margin-left: auto;
+  transition: transform 0.3s;
 }
 
 .disciplina-item[open] summary::after {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* Replicando exatamente a mesma estrutura para os cursos */
 .course-desc {
-    height: 60px;
-    overflow: hidden;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.4;
-    transition: height 0.3s ease;
-    margin-bottom: 0;
+  height: 60px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: height 0.3s ease;
+  margin-bottom: 0;
 }
 
 .course-desc.expanded {
-    height: auto;
+  height: auto;
 }
 
 /* Estilo para o menu mobile */
 .navbar-collapse.offcanvas-collapse,
 .navbar-custom .navbar-collapse.offcanvas-collapse,
 .offcanvas-collapse {
-    position: fixed !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    padding: 1rem !important;
-    overflow-y: auto !important;
-    visibility: visible !important;
-    background-color: #ffffff !important;
-    transition: transform .3s ease-in-out !important;
-    transform: translateX(100%) !important;
-    z-index: 1045 !important;
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  padding: 1rem !important;
+  overflow-y: auto !important;
+  visibility: visible !important;
+  background-color: #ffffff !important;
+  transition: transform 0.3s ease-in-out !important;
+  transform: translateX(100%) !important;
+  z-index: 1045 !important;
 }
 
 .navbar-collapse.offcanvas-collapse.open,
 .navbar-custom .navbar-collapse.offcanvas-collapse.open,
 .offcanvas-collapse.open {
-    transform: translateX(0) !important;
-    box-shadow: -5px 0 10px rgba(0,0,0,0.1) !important;
-    background-color: #ffffff !important;
+  transform: translateX(0) !important;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1) !important;
+  background-color: #ffffff !important;
 }
 
 /* Estilo dos links no menu mobile */
 .offcanvas-collapse .nav-link,
 .navbar-collapse.offcanvas-collapse .nav-link,
 .navbar-custom .navbar-collapse.offcanvas-collapse .nav-link {
-    color: #333 !important;
-    font-weight: 600 !important;
-    padding: 0.75rem 0 !important;
-    font-size: 1rem !important;
+  color: #333 !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 0 !important;
+  font-size: 1rem !important;
 }
 
 /* Hover e active dos links */
 .offcanvas-collapse .nav-link:hover,
 .offcanvas-collapse .nav-link:focus,
 .offcanvas-collapse .nav-link.active {
-    color: #00bfd8 !important;
+  color: #00bfd8 !important;
 }
 
 /* Ajuste do container do menu */
 .offcanvas-collapse .navbar-nav {
-    padding: 1rem 0 !important;
+  padding: 1rem 0 !important;
 }
 
 /* Estilo base da sidenav */
 .offcanvas-collapse {
-    position: fixed !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    padding: 1rem !important;
-    overflow-y: auto !important;
-    visibility: visible !important;
-    background-color: #ffffff !important;
-    transition: transform .3s ease-in-out !important;
-    transform: translateX(100%) !important;
-    z-index: 1045 !important;
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  padding: 1rem !important;
+  overflow-y: auto !important;
+  visibility: visible !important;
+  background-color: #ffffff !important;
+  transition: transform 0.3s ease-in-out !important;
+  transform: translateX(100%) !important;
+  z-index: 1045 !important;
 }
 
 /* Quando a navbar está no topo (transparente) */
 .offcanvas-collapse {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 /* Quando a navbar está com fundo branco */
 .offcanvas-collapse.white-bg {
-    background-color: #ffffff !important;
+  background-color: #ffffff !important;
 }
 
 /* Links na sidenav quando está transparente */
 .offcanvas-collapse .nav-link {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 /* Links na sidenav quando está com fundo branco */
 .offcanvas-collapse.white-bg .nav-link {
-    color: #333 !important;
+  color: #333 !important;
 }
 
 /* Em telas menores que 992px (quando aparece o menu hamburguer) */
 @media (max-width: 991.98px) {
-    .navbar-custom {
-        background-color: #fff !important;
-        box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-    }
+  .navbar-custom {
+    background-color: #fff !important;
+    box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+  }
 
-    .navbar-custom .nav-link {
-        color: #333 !important;
-    }
+  .navbar-custom .nav-link {
+    color: #333 !important;
+  }
 
-    .navbar-custom .nav-link:hover,
-    .navbar-custom .nav-link.active {
-        color: #00bfd8 !important;
-    }
+  .navbar-custom .nav-link:hover,
+  .navbar-custom .nav-link.active {
+    color: #00bfd8 !important;
+  }
 
-    /* Ajuste da cor do botão hamburguer */
-    .navbar-custom .navbar-toggler {
-        color: #333 !important;
-    }
+  /* Ajuste da cor do botão hamburguer */
+  .navbar-custom .navbar-toggler {
+    color: #333 !important;
+  }
 
-    /* Logo escuro em mobile */
-    .navbar-custom .navbar-brand img {
-        content: url("../images/utfpr-branco.svg");
-    }
+  /* Logo escuro em mobile */
+  .navbar-custom .navbar-brand img {
+    content: url('../images/utfpr-branco.svg');
+  }
+}
+
+.basic-6 {
+  padding-top: 6rem;
+  padding-bottom: 5.5rem;
+  background-color: #f3f7fd; /* Light blue background */
+}
+
+.basic-6 .text-container {
+  text-align: center;
+}
+
+.basic-6 h2 {
+  margin-bottom: 3rem;
+}
+
+.basic-6 .info-section {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.basic-6 .info-section h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.basic-6 .list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+
+.basic-6 .list-unstyled .fas {
+  margin-right: 0.5rem;
+  color: #000;
+}
+
+.basic-6 .btn-solid-lg {
+  margin-top: 2rem;
 }
