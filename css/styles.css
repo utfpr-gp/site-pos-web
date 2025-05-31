@@ -45,6 +45,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  background-color: #fbf9f5;
 }
 
 body,
@@ -2626,7 +2627,6 @@ a:hover.back-to-top {
 .basic-6 {
   padding-top: 6rem;
   padding-bottom: 5.5rem;
-  background-color: #f3f7fd; /* Light blue background */
 }
 
 .basic-6 .text-container {
@@ -2658,4 +2658,57 @@ a:hover.back-to-top {
 
 .basic-6 .btn-solid-lg {
   margin-top: 2rem;
+}
+
+/* fun-facts */
+.fun-facts {
+  position: relative;
+  padding: 120px 0px 80px 0px;
+  overflow: hidden;
+}
+
+.fun-facts:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 95%;
+  height: 100%;
+  background-color: #000000;
+  content: '';
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+.fun-facts:after {
+  content: '';
+  z-index: 2;
+}
+
+.fun-facts .counter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.counter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fun-facts h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.fun-facts h2::after {
+  content: '';
+}
+
+.fun-facts p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
 }
