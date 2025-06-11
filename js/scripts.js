@@ -1,4 +1,3 @@
-
 (function ($) {
   'use strict';
 
@@ -50,16 +49,102 @@
   });
 
   /* Countdown Timer - The Final Countdown */
-  $('#clock')
-    .countdown('2025/10/14 08:00:00') /* change here your "countdown to" date */
-    .on('update.countdown', function (event) {
-      var format =
-        '<span class="counter-number">%D<br><span class="timer-text">Dias</span></span><span class="counter-number">%H<br><span class="timer-text">Horas</span></span><span class="counter-number">%M<br><span class="timer-text">Minutos</span></span><span class="counter-number">%S<br><span class="timer-text">Segundos</span></span>';
-      $(this).html(event.strftime(format));
-    })
-    .on('finish.countdown', function (event) {
-      $(this).html('This offer has expired!').parent().addClass('disabled');
-    });
+  // $('#clock')
+  //   .countdown('2025/10/14 08:00:00') /* change here your "countdown to" date */
+  //   .on('update.countdown', function (event) {
+  //     var format =
+  //       '<span class="counter-number">%D<br><span class="timer-text">Dias</span></span><span class="counter-number">%H<br><span class="timer-text">Horas</span></span><span class="counter-number">%M<br><span class="timer-text">Minutos</span></span><span class="counter-number">%S<br><span class="timer-text">Segundos</span></span>';
+  //     $(this).html(event.strftime(format));
+  //   })
+  //   .on('finish.countdown', function (event) {
+  //     $(this).html('This offer has expired!').parent().addClass('disabled');
+  //   });
+
+  /* ----------------------------------------------------------- */
+  /* DINAMISMO DO SITE - Contagem Regressiva e Botões
+  /* Este código adapta o site com base na data atual
+  /* ----------------------------------------------------------- */
+  function inicializarConteudoDinamico() {
+    // --- 1. DEFINA AS DATAS IMPORTANTES DO CURSO AQUI ---
+    // Formato: ANO-MÊS-DIA. Use os dados corretos do seu edital.
+    const dataFimPreInscricao = new Date('2025-07-31T23:59:59');
+    const dataInicioInscricao = new Date('2025-08-01T00:00:00');
+    const dataFimInscricao = new Date('2025-08-27T23:59:59');
+    const dataInicioAulas = new Date('2025-09-22T00:00:00');
+    const agora = new Date(); // Pega a data e hora atuais
+
+    // --- 2. PEGUE OS ELEMENTOS DA PÁGINA QUE VAMOS MUDAR ---
+    var countdownLabel = $('#countdown-label');
+    var countdownClock = $('#clock');
+    var botaoPrincipal = $('.btn-solid-lg');
+
+    // --- 3. LÓGICA PARA ATUALIZAR O SITE CONFORME A FASE ---
+    let dataAlvo;
+    let labelTexto;
+    let botaoTexto = 'INSCREVA-SE';
+    let botaoLink = '#register'; // Link padrão
+
+    // FASE 1: Período de Pré-Inscrição
+    if (agora < dataFimPreInscricao) {
+      dataAlvo = dataFimPreInscricao;
+      labelTexto = 'A PRÉ-INSCRIÇÃO TERMINA EM:';
+      botaoTexto = 'FAÇA SUA PRÉ-INSCRIÇÃO';
+      botaoLink = '#register';
+    }
+    // FASE 2: Período de Inscrição
+    else if (agora >= dataInicioInscricao && agora < dataFimInscricao) {
+      dataAlvo = dataFimInscricao;
+      labelTexto = 'AS INSCRIÇÕES TERMINAM EM:';
+      botaoTexto = 'INSCREVA-SE AGORA';
+      botaoLink = '#register';
+    }
+    // FASE 3: Após inscrições e antes das aulas
+    else if (agora >= dataFimInscricao && agora < dataInicioAulas) {
+      dataAlvo = dataInicioAulas;
+      labelTexto = 'AS AULAS COMEÇAM EM:';
+      botaoTexto = 'VAGAS ESGOTADAS';
+      botaoLink = '#professores';
+      countdownClock.show();
+    }
+    // FASE 4: Após o início das aulas
+    else {
+      countdownLabel.html('TURMA EM ANDAMENTO');
+      botaoTexto = 'CONHEÇA A PÓS';
+      botaoLink = '#description';
+      countdownClock.hide(); // Esconde o relógio
+    }
+
+    // --- 4. APLIQUE AS MUDANÇAS NA PÁGINA ---
+
+    // Atualiza o texto do título da contagem
+    countdownLabel.html(labelTexto);
+
+    // Atualiza o texto e o link do botão principal
+    botaoPrincipal.html(botaoTexto).attr('href', botaoLink);
+
+    // Inicia ou reinicia o plugin da contagem regressiva com a data e formato corretos
+    if (dataAlvo && agora < dataAlvo) {
+      countdownClock
+        .countdown(dataAlvo)
+        .on('update.countdown', function (event) {
+          var format =
+            '<span class="counter-number">%D<br><span class="timer-text">Dias</span></span>' +
+            '<span class="counter-number">%H<br><span class="timer-text">Horas</span></span>' +
+            '<span class="counter-number">%M<br><span class="timer-text">Minutos</span></span>' +
+            '<span class="counter-number">%S<br><span class="timer-text">Segundos</span></span>';
+          $(this).html(event.strftime(format));
+        })
+        .on('finish.countdown', function (event) {
+          // Quando a contagem terminar, ela re-executa a função para passar para a próxima fase automaticamente!
+          setTimeout(function () {
+            inicializarConteudoDinamico();
+          }, 1000);
+        });
+    }
+  }
+
+  // Chama a função para que tudo seja configurado assim que a página carregar
+  inicializarConteudoDinamico();
 
   /* Image Slider 2 - Swiper */
   var imageSliderOne = new Swiper('.image-slider-1', {
@@ -481,27 +566,31 @@
     $(this).blur();
   });
 
-  document.querySelectorAll('.expand-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        const descContainer = this.parentElement;
-        const desc = descContainer.querySelector('.course-desc') || descContainer.querySelector('.professor-desc');
-        const card = this.closest('.card');
-        
-        if (desc) {
-            desc.classList.toggle('expanded');
-            this.classList.toggle('expanded');
-            if (card) {
-                card.classList.toggle('expanded');
-            }
-            
-            // Força recálculo da altura
-            if (desc.classList.contains('expanded')) {
-                const height = desc.scrollHeight;
-                desc.style.height = height + 'px';
-            } else {
-                desc.style.height = desc.classList.contains('professor-desc') ? '80px' : '60px';
-            }
+  document.querySelectorAll('.expand-btn').forEach((button) => {
+    button.addEventListener('click', function () {
+      const descContainer = this.parentElement;
+      const desc =
+        descContainer.querySelector('.course-desc') ||
+        descContainer.querySelector('.professor-desc');
+      const card = this.closest('.card');
+
+      if (desc) {
+        desc.classList.toggle('expanded');
+        this.classList.toggle('expanded');
+        if (card) {
+          card.classList.toggle('expanded');
         }
+
+        // Força recálculo da altura
+        if (desc.classList.contains('expanded')) {
+          const height = desc.scrollHeight;
+          desc.style.height = height + 'px';
+        } else {
+          desc.style.height = desc.classList.contains('professor-desc')
+            ? '80px'
+            : '60px';
+        }
+      }
     });
   });
 })(jQuery);

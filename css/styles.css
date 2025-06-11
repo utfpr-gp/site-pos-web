@@ -51,15 +51,15 @@ html {
 body,
 p {
   color: #555;
-  font: 400 1rem/1.625rem "Montserrat", sans-serif;
+  font: 400 1rem/1.625rem 'Montserrat', sans-serif;
 }
 
 .p-large {
-  font: 400 1.125rem/1.75rem "Montserrat", sans-serif;
+  font: 400 1.125rem/1.75rem 'Montserrat', sans-serif;
 }
 
 .p-small {
-  font: 400 0.875rem/1.5rem "Montserrat", sans-serif;
+  font: 400 0.875rem/1.5rem 'Montserrat', sans-serif;
 }
 
 .p-heading {
@@ -68,32 +68,32 @@ p {
 
 h1 {
   color: #333;
-  font: 700 2.75rem/3.375rem "Montserrat", sans-serif;
+  font: 700 2.75rem/3.375rem 'Montserrat', sans-serif;
 }
 
 h2 {
   color: #333;
-  font: 700 2.25rem/2.875rem "Montserrat", sans-serif;
+  font: 700 2.25rem/2.875rem 'Montserrat', sans-serif;
 }
 
 h3 {
   color: #333;
-  font: 700 1.625rem/2.125rem "Montserrat", sans-serif;
+  font: 700 1.625rem/2.125rem 'Montserrat', sans-serif;
 }
 
 h4 {
   color: #333;
-  font: 700 1.25rem/1.875rem "Montserrat", sans-serif;
+  font: 700 1.25rem/1.875rem 'Montserrat', sans-serif;
 }
 
 h5 {
   color: #333;
-  font: 700 1.125rem/1.75rem "Montserrat", sans-serif;
+  font: 700 1.125rem/1.75rem 'Montserrat', sans-serif;
 }
 
 h6 {
   color: #333;
-  font: 700 1rem/1.625rem "Montserrat", sans-serif;
+  font: 700 1rem/1.625rem 'Montserrat', sans-serif;
 }
 
 .testimonial-text {
@@ -135,7 +135,7 @@ a:hover {
   border-radius: 2rem;
   background-color: #ffbd50;
   color: #333;
-  font: 600 0.875rem/0 "Montserrat", sans-serif;
+  font: 600 0.875rem/0 'Montserrat', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -154,12 +154,31 @@ a:hover {
   border-radius: 2rem;
   background-color: #ffbd50;
   color: #333;
-  font: 600 0.875rem/0 "Montserrat", sans-serif;
+  font: 600 0.875rem/0 'Montserrat', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .btn-solid-lg:hover {
+  border: 0.125rem solid #333;
+  background-color: transparent;
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-solid-lg-2 {
+  display: inline-block;
+  padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+  border: 0.125rem solid #ffbd50;
+  border-radius: 2rem;
+  background-color: #ffbd50;
+  color: #333;
+  font: 600 0.875rem/0 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-lg-2:hover {
   border: 0.125rem solid #333;
   background-color: transparent;
   color: #333;
@@ -173,7 +192,7 @@ a:hover {
   border-radius: 2rem;
   background-color: transparent;
   color: #333;
-  font: 600 0.875rem/0 "Montserrat", sans-serif;
+  font: 600 0.875rem/0 'Montserrat', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -192,7 +211,7 @@ a:hover {
   border-radius: 2rem;
   background-color: transparent;
   color: #333;
-  font: 600 0.875rem/0 "Montserrat", sans-serif;
+  font: 600 0.875rem/0 'Montserrat', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -211,7 +230,7 @@ a:hover {
   border-radius: 2rem;
   background-color: transparent;
   color: #333;
-  font: 600 0.875rem/0 "Montserrat", sans-serif;
+  font: 600 0.875rem/0 'Montserrat', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -242,7 +261,7 @@ a:hover {
   left: 1.375rem;
   color: #555;
   opacity: 1;
-  font: 400 0.875rem/1.375rem "Montserrat", sans-serif;
+  font: 400 0.875rem/1.375rem 'Montserrat', sans-serif;
   cursor: text;
   transition: all 0.2s ease;
 }
@@ -354,7 +373,7 @@ Team Style
   border-radius: 0.25rem;
   background-color: #fff;
   color: #555;
-  font: 400 0.875rem/1.875rem "Montserrat", sans-serif;
+  font: 400 0.875rem/1.875rem 'Montserrat', sans-serif;
   transition: all 0.2s;
   -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
@@ -403,7 +422,7 @@ select {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background-image: url("../images/down-arrow.png");
+  background-image: url('../images/down-arrow.png');
   background-position: 96% 50%;
   background-repeat: no-repeat;
   outline: none;
@@ -423,7 +442,7 @@ select::-ms-expand {
   border-radius: 0.25rem;
   background-color: #fff;
   color: #555;
-  font: 400 0.875rem/1.75rem "Montserrat", sans-serif;
+  font: 400 0.875rem/1.75rem 'Montserrat', sans-serif;
   transition: all 0.2s;
 }
 
@@ -445,7 +464,7 @@ select::-ms-expand {
   line-height: 1.25rem;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   vertical-align: -15%;
   margin-right: 0.375rem;
 }
@@ -453,7 +472,7 @@ input[type="checkbox"] {
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active),
   screen and (-ms-high-contrast: none) {
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     vertical-align: -9%;
   }
 }
@@ -466,7 +485,7 @@ input[type="checkbox"] {
   border-radius: 1.5rem;
   background-color: #ffbd50;
   color: #333;
-  font: 600 0.875rem/0 "Montserrat", sans-serif;
+  font: 600 0.875rem/0 'Montserrat', sans-serif;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -752,7 +771,7 @@ input[type="checkbox"] {
 .navbar-custom {
   background-color: transparent;
   box-shadow: none;
-  font: 600 0.875rem/0.875rem "Montserrat", sans-serif;
+  font: 600 0.875rem/0.875rem 'Montserrat', sans-serif;
   transition: all 0.2s;
 }
 
@@ -796,7 +815,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .navbar-brand.logo-text {
-  font: italic 600 2rem/1.5rem "Montserrat", sans-serif;
+  font: italic 600 2rem/1.5rem 'Montserrat', sans-serif;
   color: #ffbd50;
   text-decoration: none;
 }
@@ -857,7 +876,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .dropdown-item .item-text {
-  font: 600 0.875rem/0.875rem "Montserrat", sans-serif;
+  font: 600 0.875rem/0.875rem 'Montserrat', sans-serif;
 }
 
 .navbar-custom .dropdown-item:hover .item-text {
@@ -886,25 +905,25 @@ input[type="checkbox"] {
 }
 
 .navbar-custom
-  button[aria-expanded="false"]
+  button[aria-expanded='false']
   .navbar-toggler-awesome.fas.fa-times {
   display: none;
 }
 
 .navbar-custom
-  button[aria-expanded="false"]
+  button[aria-expanded='false']
   .navbar-toggler-awesome.fas.fa-bars {
   display: inline-block;
 }
 
 .navbar-custom
-  button[aria-expanded="true"]
+  button[aria-expanded='true']
   .navbar-toggler-awesome.fas.fa-bars {
   display: none;
 }
 
 .navbar-custom
-  button[aria-expanded="true"]
+  button[aria-expanded='true']
   .navbar-toggler-awesome.fas.fa-times {
   display: inline-block;
   margin-right: 0.125rem;
@@ -922,7 +941,7 @@ input[type="checkbox"] {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url("../images/header-background.jpg") center center no-repeat;
+    url('../images/header-background.jpg') center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -1348,7 +1367,7 @@ input[type="checkbox"] {
 }
 
 .basic-4 .video-play-button:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 0;
   top: 50%;
@@ -1365,7 +1384,7 @@ input[type="checkbox"] {
 }
 
 .basic-4 .video-play-button:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -1612,7 +1631,7 @@ input[type="checkbox"] {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url("../images/date-background.jpg") center center no-repeat;
+    url('../images/date-background.jpg') center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -1768,7 +1787,7 @@ input[type="checkbox"] {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url("../images/header-background.jpg") center center no-repeat;
+    url('../images/header-background.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -1790,12 +1809,6 @@ input[type="checkbox"] {
   color: #bbb;
 }
 
-.footer .list-unstyled .fas {
-  color: #bbb;
-  font-size: 0.5rem;
-  line-height: 1.375rem;
-}
-
 .footer .list-unstyled .media-body {
   margin-left: 0.625rem;
 }
@@ -1809,6 +1822,18 @@ input[type="checkbox"] {
 }
 
 .footer .fab:hover {
+  color: #ffbd50;
+}
+
+.footer .fas {
+  margin-bottom: 0.75rem;
+  margin-right: 1rem;
+  color: #ccc;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.footer .fas:hover {
   color: #ffbd50;
 }
 
@@ -1844,7 +1869,7 @@ a.back-to-top {
   width: 2.625rem;
   height: 2.625rem;
   border-radius: 1.875rem;
-  background: #ffbd50 url("../images/up-arrow.png") no-repeat center 47%;
+  background: #ffbd50 url('../images/up-arrow.png') no-repeat center 47%;
   background-size: 1.125rem 1.125rem;
   text-indent: -9999px;
 }
@@ -1864,7 +1889,7 @@ a:hover.back-to-top {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url("../images/header-background.jpg") center center no-repeat;
+    url('../images/header-background.jpg') center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -2489,7 +2514,7 @@ a:hover.back-to-top {
 
 /* Adiciona uma seta personalizada */
 .disciplina-item summary::after {
-  content: "\25BC";
+  content: '\25BC';
   margin-left: auto;
   transition: transform 0.3s;
 }
@@ -2620,7 +2645,7 @@ a:hover.back-to-top {
 
   /* Logo escuro em mobile */
   .navbar-custom .navbar-brand img {
-    content: url("../images/utfpr-branco.svg");
+    content: url('../images/utfpr-branco.svg');
   }
 }
 
@@ -2666,7 +2691,7 @@ a:hover.back-to-top {
 
 /* Linha vertical da timeline */
 .timeline::before {
-  content: " ";
+  content: ' ';
   background: #d4d9df;
   display: inline-block;
   position: absolute;
@@ -2857,13 +2882,13 @@ a:hover.back-to-top {
   width: 95%;
   height: 100%;
   background-color: #000000;
-  content: "";
+  content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
 }
 
 .fun-facts:after {
-  content: "";
+  content: '';
   z-index: 2;
 }
 
@@ -2884,7 +2909,7 @@ a:hover.back-to-top {
 }
 
 .fun-facts h2::after {
-  content: "";
+  content: '';
 }
 
 .fun-facts p {
@@ -2892,4 +2917,276 @@ a:hover.back-to-top {
   font-size: 15px;
   font-weight: 500;
   margin-top: 15px;
+}
+
+/* ----------------------------------------- */
+/* Estilos para a Nova Seção de Inscrição    */
+/* ----------------------------------------- */
+
+.form-1 .motivos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas em telas grandes */
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.motivo-item {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.motivo-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: #ffedd0; /* Amarelo bem claro, da cor dos inputs */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.motivo-icon i {
+  color: #333; /* Cor do ícone */
+  font-size: 1rem;
+}
+
+.motivo-text strong {
+  display: block;
+  color: #333;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.motivo-text p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #333;
+}
+
+/* Ajustes para telas médias e pequenas */
+@media (max-width: 991.98px) {
+  .form-1 .row {
+    flex-direction: column-reverse; /* Coloca os motivos acima do form em mobile */
+  }
+
+  .form-1 .motivos-container {
+    margin-bottom: 3rem; /* Espaço entre os motivos e o formulário */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .form-1 .motivos-container {
+    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+  }
+}
+
+/* ----------------------------------------- */
+/* Estilos para o Novo Hub de Contato Moderno*/
+/* ----------------------------------------- */
+.form-3-modern {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #fbf9f5; /* Fundo claro para esta seção */
+  text-align: center;
+}
+
+.form-3-modern h2 {
+  color: #333;
+}
+
+.form-3-modern .p-heading {
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.contact-options {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact-box {
+  flex: 1;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-box i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffbd50;
+}
+
+.contact-box h3 {
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.contact-box p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  min-height: 50px; /* Garante alinhamento */
+}
+
+.contact-box .btn-solid-lg,
+.contact-box .btn-outline-lg {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+}
+
+.form-container-contact {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-container-contact .form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Estilos para o novo rodapé */
+.footer .footer-col {
+  text-align: left;
+}
+.footer .footer-logo {
+  width: 150px;
+  opacity: 0.8;
+}
+.footer .footer-col .fa-stack {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.footer .footer-col li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.footer .footer-col li i {
+  margin-top: 5px;
+  margin-right: 10px;
+  color: #bbb;
+}
+
+@media (max-width: 991.98px) {
+  .contact-options {
+    flex-direction: column;
+  }
+  .footer .footer-col {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer .footer-col ul {
+    display: inline-block;
+    text-align: left;
+  }
+}
+/* Estilos para a lista de perfis na seção "Quem Deve Fazer" */
+.basic-3 .list-unstyled .media {
+  display: flex; /* A mágica acontece aqui: alinha os itens lado a lado */
+  align-items: flex-start; /* Alinha o topo do ícone com o topo do texto */
+}
+
+.basic-3 .list-unstyled .fas {
+  font-size: 1.75rem; /* Aumenta o tamanho do ícone */
+  color: #ffbd50; /* Deixa o ícone com a cor de destaque do site */
+  margin-right: 1rem; /* Adiciona um espaço entre o ícone e o texto */
+  margin-top: 0.25rem; /* Pequeno ajuste para alinhar verticalmente com o título */
+  width: 35px; /* Garante que todos os ícones ocupem o mesmo espaço */
+}
+
+.basic-3 .media-body strong {
+  font-size: 1.1rem; /* Opcional: Aumenta um pouco o título de cada perfil */
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------- */
+/* Estilos para a Nova Seção de Inscrição (com números) */
+/* ---------------------------------------------------- */
+
+/* ADICIONE ESTE NOVO ESTILO PARA O TÍTULO */
+.motivos-title {
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.form-1 .motivos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  /* Remova o margin-top daqui se ele existir */
+}
+
+.motivo-item {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* AJUSTE O ESTILO DO CÍRCULO PARA USAR NÚMEROS */
+.motivo-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: #ffedd0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Novas propriedades para o número */
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1; /* Garante alinhamento vertical perfeito do número */
+}
+
+/* O restante do CSS (.motivo-text, etc.) pode continuar o mesmo */
+.motivo-text strong {
+  display: block;
+  color: #333;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.motivo-text p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #333;
+}
+
+/* As regras de @media continuam as mesmas */
+@media (max-width: 991.98px) {
+  .form-1 .row {
+    flex-direction: column-reverse;
+  }
+  .form-1 .motivos-wrapper {
+    /* Mudamos de .motivos-container para o wrapper */
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .form-1 .motivos-container {
+    grid-template-columns: 1fr;
+  }
 }
