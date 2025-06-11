@@ -48,18 +48,6 @@
       $('.navbar-collapse').collapse('hide');
   });
 
-  /* Countdown Timer - The Final Countdown */
-  // $('#clock')
-  //   .countdown('2025/10/14 08:00:00') /* change here your "countdown to" date */
-  //   .on('update.countdown', function (event) {
-  //     var format =
-  //       '<span class="counter-number">%D<br><span class="timer-text">Dias</span></span><span class="counter-number">%H<br><span class="timer-text">Horas</span></span><span class="counter-number">%M<br><span class="timer-text">Minutos</span></span><span class="counter-number">%S<br><span class="timer-text">Segundos</span></span>';
-  //     $(this).html(event.strftime(format));
-  //   })
-  //   .on('finish.countdown', function (event) {
-  //     $(this).html('This offer has expired!').parent().addClass('disabled');
-  //   });
-
   /* ----------------------------------------------------------- */
   /* DINAMISMO DO SITE - Contagem Regressiva e Botões
   /* Este código adapta o site com base na data atual
