@@ -3253,3 +3253,9 @@ a:hover.back-to-top {
   font-size: 0.9rem;
   color: #555;
 }
+
+/* Correção para texto do título vazando em telas pequenas */
+.header h1 {
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* Para compatibilidade com navegadores mais antigos */
+}
