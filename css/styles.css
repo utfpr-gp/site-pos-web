@@ -2000,12 +2000,6 @@ a:hover.back-to-top {
     padding-top: 9rem;
   }
 
-  .header h1 {
-    font-size: 4rem;
-    line-height: 4.875rem;
-    letter-spacing: -0.3px;
-  }
-
   .header .btn-solid-lg {
     margin-bottom: 0;
     margin-left: 0;
@@ -3254,8 +3248,25 @@ a:hover.back-to-top {
   color: #555;
 }
 
-/* Correção para texto do título vazando em telas pequenas */
+/* Tipografia fluida e segura para o título principal do header */
 .header h1 {
+  /* 1. Tipografia Fluida com clamp() */
+  /* Mínimo de 2.5rem, preferencial de 1.5rem + 4vw, máximo de 4rem */
+  font-size: clamp(2.5rem, 1.5rem + 4vw, 4rem);
+
+  /* 2. Rede de Segurança para palavras longas */
   overflow-wrap: break-word;
-  word-wrap: break-word; /* Para compatibilidade com navegadores mais antigos */
+  word-wrap: break-word; /* Compatibilidade */
+
+  /* Mantemos as outras propriedades */
+  color: #eee;
+  margin-bottom: 0.75rem;
+  line-height: 1.2; /* Um line-height relativo funciona melhor com clamp() */
+  letter-spacing: -0.2px;
+}
+
+@media (max-width: 600px) {
+  #sec-span {
+    display: none;
+  }
 }

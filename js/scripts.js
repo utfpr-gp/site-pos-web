@@ -115,11 +115,10 @@
       countdownClock
         .countdown(dataAlvo)
         .on('update.countdown', function (event) {
-          var format =
-            '<span class="counter-number">%D<br><span class="timer-text">Dias</span></span>' +
-            '<span class="counter-number">%H<br><span class="timer-text">Horas</span></span>' +
-            '<span class="counter-number">%M<br><span class="timer-text">Minutos</span></span>' +
-            '<span class="counter-number">%S<br><span class="timer-text">Segundos</span></span>';
+          var format = `<span class="counter-number">%D<br><span class="timer-text">Dias</span></span>
+            <span class="counter-number">%H<br><span class="timer-text">Horas</span></span>
+            <span class="counter-number">%M<br><span class="timer-text">Minutos</span></span>
+            <span id="sec-span" class="counter-number">%S<br><span class="timer-text">Segundos</span></span>`;
           $(this).html(event.strftime(format));
         })
         .on('finish.countdown', function (event) {
